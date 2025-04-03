@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models here.
-class animalDatabase(models.Model):
+class animals(models.Model):
     id = models.SmallAutoField(primary_key=True)
     name = models.TextField(max_length=32)
     dateOfBirth = models.DateField()
@@ -10,3 +10,5 @@ class animalDatabase(models.Model):
     intakeMethod = models.TextField(max_length=32)
     notes = models.TextField(max_length=256)
     status = models.TextField(max_length=32)
+    def __str__(self):
+        return self.name
