@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>
+        Animal Shelter
+    </title>
+</head>
+
+<body>
+    <form action="">
+        <label for="name">Name:</label>
+        <input type="text" name="username" id="username" required aria-required aria-label="Name">
+        <br>
+        <label for="userDateOfBirth">Age:</label>
+        <input type="date" name="userDateOfBirth" id="userDateOfBirth" required aria-required
+            aria-label="Date of birth">
+        <br>
+        <!-- TODO: add logic for detecting date of birth < 18 years old -->
+        <!-- TODO: add logic for detecting form data of either one -->
+        <label for="email">Email:</label>
+        <input type="email" name="emailAddress" id="emailAddress" required aria-required aria-label="Email">
+        <br>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" name="phoneNumber" id="phoneNumber" required aria-required aria-label="Email">
+        <br>
+        <label for="animalType">Animal:</label>
+        <select name="animalType" id="animalType" required aria-required aria-label="Animal">
+            <!-- TODO: change breed types -->
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="rabbit">Rabbit</option>
+            <option value="hamster">Hamster</option>
+        </select>
+        <br>
+        <!-- TODO: add logic for changing <option> values based on animal type -->
+        <label for="breedType">Breed:</label>
+        <select name="breedType" id="breedType" required aria-required aria-label="Breed type">
+            <!-- TODO: change breed types -->
+            <option value="option1">option 1</option>
+            <option value="option2">option 2</option>
+            <option value="option3">option 3</option>
+            <option value="option4">option 4</option>
+        </select>
+        <br>
+        <label for="date">Meeting Date:</label>
+        <input type="date" name="date" id="date" required aria-required aria-label="Date">
+        <br>
+        <input name="reset" id="reset" type="reset" aria-label="Clear this form" value="Cancel">
+        <input name="submit" id="submit" type="submit" aria-label="Submit this form" value="Submit">
+    </form>
+</body>
+
+</html>
