@@ -3,7 +3,8 @@ from django.db import models
 # Create your models here.
 class animals(models.Model):
     id = models.SmallAutoField(primary_key=True)
-    name = models.TextField(max_length=32)
+    firstName = models.TextField(max_length=32)
+    lastName = models.TextField(max_length=32)
     dateOfBirth = models.DateField()
     gender = models.BooleanField()
     breed = models.TextField(max_length=32)

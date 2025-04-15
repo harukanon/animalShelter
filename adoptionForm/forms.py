@@ -1,5 +1,7 @@
 from django import forms
 
 class adoptionForm(forms.Form):
-    name = forms.CharField(min_length=1)
-    
+    firstName = forms.CharField(min_length=1, max_length=32)
+    lastName = forms.CharField(min_length=1, max_length=32)
+    date
+
