@@ -1,7 +1,4 @@
 from django.contrib import admin
-from .models import Cat, Dog, Rabbit, Fox
+from .models import Animal
 
-admin.site.register(Cat)
-admin.site.register(Dog)
-admin.site.register(Rabbit)
-admin.site.register(Fox)
+admin.site.register(Animal)
