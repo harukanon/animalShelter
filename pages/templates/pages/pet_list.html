@@ -1,0 +1,19 @@
+{% extends 'pages/base.html' %}
+{% block title %}All Pets - Animal Adoption{% endblock %}
+{% block content %}
+<section class="pet-list">
+    <h2>All Available Pets</h2>
+    <div class="pet-flex">
+        {% for pet in pets %}
+            <div class="pet-card">
+                {% if pet.image %}
+                    <img src="{{ pet.image.url }}" alt="{{ pet.name }}">
+                {% endif %}
+                <h3>{{ pet.name }}</h3>
+                <p>{{ pet.pet_type }}, {{ pet.age }} years old</p>
+                <a href="{% url 'pet_detail' pet_type=pet.pet_type name=pet.name %}" class="view-btn">View Details</a>
+            </div>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}

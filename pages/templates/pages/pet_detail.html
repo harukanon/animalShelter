@@ -1,0 +1,59 @@
+{% extends 'pages/base.html' %}
+{% block content %}
+
+<body>
+    <div class="container">
+        <div class="card">
+            {% if pet.image %}
+            <img src="{{ pet.image.url }}" alt="{{ pet.name }}" class="pet-image">
+            {% else %}
+            <div class="no-image">No Image Available</div>
+            {% endif %}
+            <div class="info">
+                {% if pet.featured %}
+                <p class="featured">🌟 Featured Pet</p>
+                {% endif %}
+                <h1>{{ pet.name }}</h1>
+                <p><strong>Type:</strong> {{ pet.pet_type }}</p>
+                <p><strong>Age:</strong> {{ pet.age }} years</p>
+                <p><strong>Gender:</strong> {{ pet.get_gender_display }}</p>
+                <p><strong>Breed:</strong> {{ pet.breed }}</p>
+                <!-- <form method="post" action="">
+                    {% csrf_token %}
+                    <input type="hidden" name="pet_type" value="{{ pet.type }}">
+                    <input type="hidden" name="pet_name" value="{{ pet.name }}">
+                </form> -->
+                <button class="adopt-btn" id="openPopup">Adopt Me</button>
+                <div class="popup" id="popup">
+                    <div class="popup-content">
+                        <h3>Thank you! Please fill this form:</h3>
+                        <span class="close">&times;</span>
+                        <!-- Form Starts Here -->
+                        <form class="adopt-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Full Name:</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email">Email:</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="phone_number">Phone Number:</label>
+                                    <input type="tel" id="phone_number" name="phone_number">
+                                </div>
+                            </div>
+
+                            <button type="submit" class="adopt-btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,182 @@
+[
+    {
+        "model": "pages.cat",
+        "pk": 1,
+        "fields": {
+            "name": "Fluffy",
+            "age": 3,
+            "gender": "F",
+            "breed": "Persian",
+            "featured": true,
+            "pet_type": "cat"
+        }
+    },
+    {
+        "model": "pages.cat",
+        "pk": 2,
+        "fields": {
+            "name": "Whiskers",
+            "age": 2,
+            "gender": "M",
+            "breed": "Maine Coon",
+            "featured": false,
+            "pet_type": "cat"
+        }
+    },
+    {
+        "model": "pages.cat",
+        "pk": 3,
+        "fields": {
+            "name": "Mittens",
+            "age": 4,
+            "gender": "F",
+            "breed": "Siamese",
+            "featured": false,
+            "pet_type": "cat"
+        }
+    },
+    {
+        "model": "pages.cat",
+        "pk": 4,
+        "fields": {
+            "name": "Luna",
+            "age": 1,
+            "gender": "F",
+            "breed": "Bengal",
+            "featured": false,
+            "pet_type": "cat"
+        }
+    },
+    {
+        "model": "pages.cat",
+        "pk": 5,
+        "fields": {
+            "name": "Oliver",
+            "age": 5,
+            "gender": "M",
+            "breed": "British Shorthair",
+            "featured": false,
+            "pet_type": "cat"
+        }
+    },
+    {
+        "model": "pages.dog",
+        "pk": 1,
+        "fields": {
+            "name": "Rex",
+            "age": 5,
+            "gender": "M",
+            "breed": "Labrador",
+            "featured": true,
+            "pet_type": "dog"
+        }
+    },
+    {
+        "model": "pages.dog",
+        "pk": 2,
+        "fields": {
+            "name": "Bella",
+            "age": 3,
+            "gender": "F",
+            "breed": "Golden Retriever",
+            "featured": false,
+            "pet_type": "dog"
+        }
+    },
+    {
+        "model": "pages.dog",
+        "pk": 3,
+        "fields": {
+            "name": "Max",
+            "age": 6,
+            "gender": "M",
+            "breed": "German Shepherd",
+            "featured": false,
+            "pet_type": "dog"
+        }
+    },
+    {
+        "model": "pages.dog",
+        "pk": 4,
+        "fields": {
+            "name": "Daisy",
+            "age": 2,
+            "gender": "F",
+            "breed": "Bulldog",
+            "featured": false,
+            "pet_type": "dog"
+        }
+    },
+    {
+        "model": "pages.dog",
+        "pk": 5,
+        "fields": {
+            "name": "Charlie",
+            "age": 4,
+            "gender": "M",
+            "breed": "Beagle",
+            "featured": false,
+            "pet_type": "dog"
+        }
+    },
+    {
+        "model": "pages.rabbit",
+        "pk": 1,
+        "fields": {
+            "name": "Thumper",
+            "age": 2,
+            "gender": "M",
+            "breed": "Himalayan",
+            "featured": true,
+            "pet_type": "rabbit"
+        }
+    },
+    {
+        "model": "pages.rabbit",
+        "pk": 2,
+        "fields": {
+            "name": "Snowball",
+            "age": 3,
+            "gender": "F",
+            "breed": "Holland Lop",
+            "featured": false,
+            "pet_type": "rabbit"
+        }
+    },
+    {
+        "model": "pages.rabbit",
+        "pk": 3,
+        "fields": {
+            "name": "Binky",
+            "age": 1,
+            "gender": "M",
+            "breed": "Mini Rex",
+            "featured": false,
+            "pet_type": "rabbit"
+        }
+    },
+    {
+        "model": "pages.rabbit",
+        "pk": 4,
+        "fields": {
+            "name": "Cinnamon",
+            "age": 4,
+            "gender": "F",
+            "breed": "English Angora",
+            "featured": false,
+            "pet_type": "rabbit"
+        }
+    },
+    {
+        "model": "pages.rabbit",
+        "pk": 5,
+        "fields": {
+            "name": "Lola",
+            "age": 2,
+            "gender": "F",
+            "breed": "Flemish Giant",
+            "featured": false,
+            "pet_type": "rabbit"
+        }
+    }
+]

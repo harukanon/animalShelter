@@ -1,0 +1,48 @@
+{% extends 'pages/base.html' %}
+{% block title %}Home - Animal Adoption{% endblock %}
+
+{% block content %}
+<!-- Main Banner -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Find Your Perfect Pet</h1>
+        <p>Thousands of pets waiting for a loving home</p>
+        <form class="search-form">
+            <select>
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="rabbit">Rabbit</option>
+            </select>
+            <button type="submit">Search</button>
+        </form>
+    </div>
+</section>
+
+<!-- Featured Pets Section -->
+<section class="featured-pets">
+    <h2>Featured Pets</h2>
+    <div class="pet-cards">
+        <div class="pet-card">
+            <a href="{{featured_cat.pet_type}}/{{featured_cat.name}}/">
+                {% if featured_cat.image %}<img src="{{ featured_cat.image.url }}" alt="{{ featured_cat.name }}">{% endif %}
+                <h3>{{ featured_cat.name }}</h3>
+                <p>{{ featured_cat.pet_type }}, {{ featured_cat.age }} years old</p>
+            </a>
+        </div>
+        <div class="pet-card">
+            <a href="{{featured_dog.pet_type}}/{{featured_dog.name}}/">
+                {% if featured_dog.image %}<img src="{{ featured_dog.image.url }}" alt="{{ featured_dog.name }}">{% endif %}
+                <h3>{{ featured_dog.name }}</h3>
+                <p>{{ featured_dog.pet_type }}, {{ featured_dog.age }} years old</p>
+            </a>
+        </div>
+        <div class="pet-card">
+            <a href="{{featured_rabbit.pet_type}}/{{featured_rabbit.name}}/">
+                {% if featured_rabbit.image %}<img src="{{ featured_rabbit.image.url }}" alt="{{ featured_rabbit.name }}">{% endif %}
+                <h3>{{ featured_rabbit.name }}</h3>
+                <p>{{ featured_rabbit.pet_type }}, {{ featured_rabbit.age }} years old</p>
+            </a>
+        </div>
+    </div>
+</section>
+{% endblock %}
